@@ -294,6 +294,10 @@ header:not(.scrolled) {
   list-style: none;
 }
 
+.mobile-action {
+  display: none;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 0.95rem;
@@ -720,7 +724,7 @@ header:not(.scrolled) {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -1615,8 +1619,9 @@ footer {
     border-left: 1px solid var(--border-glass);
     flex-direction: column;
     align-items: flex-start;
-    padding: 6rem 2.5rem;
-    gap: 2rem;
+    padding: 5rem 2rem 2rem 2rem;
+    gap: 1.25rem;
+    overflow-y: auto;
     transition: right var(--transition-normal);
   }
   
@@ -1630,6 +1635,12 @@ footer {
   
   .nav-actions {
     display: none; /* simple mobile design */
+  }
+
+  .mobile-action {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
   }
   
   .hero-title {
@@ -1653,4 +1664,41 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+
+  .testimonials-slider {
+    height: auto;
+    min-height: 280px;
+  }
+
+  .testimonial-quote {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .floating-overlay-card {
+    display: none !important;
+  }
 }
+
+@media (max-width: 480px) {
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+}
+

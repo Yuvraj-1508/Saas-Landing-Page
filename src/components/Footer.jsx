@@ -39,7 +39,7 @@ export default function Footer() {
             <h4 className="footer-heading">Resources</h4>
             <ul className="footer-links">
               <li><a href="#" className="footer-link">System Docs</a></li>
-              <li><a href="#" class="footer-link">API Specification</a></li>
+              <li><a href="#" className="footer-link">API Specification</a></li>
               <li><a href="#" className="footer-link">Pipeline Examples</a></li>
               <li><a href="#" className="footer-link">Security Audits</a></li>
             </ul>

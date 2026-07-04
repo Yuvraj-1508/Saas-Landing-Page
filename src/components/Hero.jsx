@@ -24,7 +24,7 @@ export default function Hero({ triggerToast }) {
             <span>Aether 1.0 Alpha release now live</span>
           </div>
           <h1 className="hero-title text-gradient">Supercharge your team's context with AI.</h1>
-          <p class="hero-description">Aether Flow bridges the gap between raw data and real-time execution. Connect your workspaces, run cognitive automation agents, and orchestrate complex workflows in seconds.</p>
+          <p className="hero-description">Aether Flow bridges the gap between raw data and real-time execution. Connect your workspaces, run cognitive automation agents, and orchestrate complex workflows in seconds.</p>
           
           <form className="hero-cta-form cta-form" onSubmit={handleSubmit}>
             <input 

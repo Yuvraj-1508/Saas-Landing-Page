@@ -24,9 +24,11 @@ export default function Navbar() {
         
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li><a href="#features" className="nav-link" onClick={() => setIsMenuOpen(false)}>Features</a></li>
-          <li><a href="#playground" class="nav-link" onClick={() => setIsMenuOpen(false)}>Playground</a></li>
+          <li><a href="#playground" className="nav-link" onClick={() => setIsMenuOpen(false)}>Playground</a></li>
           <li><a href="#pricing" className="nav-link" onClick={() => setIsMenuOpen(false)}>Pricing</a></li>
           <li><a href="#faq" className="nav-link" onClick={() => setIsMenuOpen(false)}>FAQs</a></li>
+          <li className="mobile-action"><a href="#pricing" className="btn btn-secondary" onClick={() => setIsMenuOpen(false)} style={{ width: '100%' }}>Sign In</a></li>
+          <li className="mobile-action"><a href="#cta" className="btn btn-primary" onClick={() => setIsMenuOpen(false)} style={{ width: '100%' }}>Join Alpha</a></li>
         </ul>
 
         <div className="nav-actions">
